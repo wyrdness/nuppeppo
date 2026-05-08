@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/nuppeppo",
     "maintainers": [
       {
@@ -16,71 +16,123 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "nuppeppo",
-    "name": "Nuppeppō (ぬっぺっぽう)",
-    "aliases": [],
-    "category": "ENTITY",
-    "subcategory": "Unknown",
+    "name": "Nuppeppō",
+    "aliases": [
+      { "name": "ぬっぺっぽう", "language": "Japanese (hiragana)" },
+      { "name": "Nuppefuhōfu", "language": "Japanese (variant reading)" },
+      { "name": "Nuppehō", "language": "Japanese (variant reading)" },
+      { "name": "Nikujin (肉人)", "language": "Japanese", "meaning": "'Meat-person'; related figure recorded in 1609 at Sunpu Castle" }
+    ],
+    "category": "ENTITY_SPIRIT",
+    "subcategory": "Yokai",
     "tags": [
-      "(identity-vs.-decay)"
+      "japan",
+      "yokai",
+      "edo-period",
+      "toriyama-sekien",
+      "abandoned-temple",
+      "rotting-flesh",
+      "immortality"
     ],
     "status": "documented",
     "description": {
-      "summary": "The Nuppeppō (also written as Nuppefuhōfu or Nuppehō) is a grotesque yōkai from Japanese folklore described as a large, blob-like creature made of decomposing human flesh.",
-      "full": "The Nuppeppō (also written as Nuppefuhōfu or Nuppehō) is a grotesque yōkai from Japanese folklore described as a large, blob-like creature made of decomposing human flesh. Its name is onomatopoetic, suggesting something soft, squishy, and malleable. Typically depicted as a flesh-colored mass roughly the size and shape of a human but without distinct features beyond rudimentary facial indentations, the Nuppeppō is characterized primarily by its overwhelmingly putrid odor of rotting flesh. Despite its horrifying appearance and smell, the creature is generally harmless, wandering aimlessly through abandoned temples, graveyards, and desolate areas. In some traditions, consuming its flesh grants immortality, connecting it to Chinese concepts of immortality elixirs."
+      "summary": "A blob-like Japanese yokai resembling a soft, wrinkled mass of flesh, said to wander abandoned temples and graveyards. Depicted in classic Edo-period yokai scrolls including Toriyama Sekien's Gazu Hyakki Yagyō (1776).",
+      "full": "The Nuppeppō (ぬっぺっぽう) is a yokai of Japanese folklore depicted as an amorphous, wrinkled blob of flesh — roughly humanoid in scale but lacking distinct features beyond rudimentary fingers, toes, and a face suggested by folds of skin. Tradition assigns it no eyes or ears, and it is generally treated as harmless, wandering deserted places: abandoned temples, graveyards, and empty village streets, especially at night and at year's end. Its name derives from nupperi (ぬっぺり), a derogatory term for women wearing heavy makeup, referencing the saggy face. The Nuppeppō is depicted in major Edo-period yokai scrolls including the Bakemono no e (c. 1700, held at Brigham Young University's L. Tom Perry Special Collections), Sawaki Suushi's Hyakkai Zukan (1737), and Toriyama Sekien's Gazu Hyakki Yagyō (1776). A related tradition — the nikujin ('meat-person') reported at Sunpu Castle in 1609 — is sometimes associated with the Nuppeppō; in some lore, eating its flesh confers immortality, echoing Chinese 'feng' or panacea-creature traditions."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Japanese, from nupperi (ぬっぺり), a term referring to drooping or sagging — originally a derogatory description of women in heavy makeup",
+      "meaning": "Approximately 'sagging / drooping thing'",
+      "first_use": "Edo period; depicted by name in 18th-century yokai scrolls"
     }
   },
+
   "classification": {
     "taxonomy": {
-      "category": "ENTITY",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "ENTITY_SPIRIT",
+      "type": "Yokai",
+      "subtype": "Flesh-blob (mukuri-flesh)",
+      "variant": "Japanese (Edo-period codification)"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "noppera-bo", "name": "Noppera-bō", "relationship": "related", "description": "Faceless yokai sometimes confused with or treated as a precursor to the Nuppeppō" },
+      { "id": "hitotsume-kozo", "name": "Hitotsume-kozō", "relationship": "similar", "description": "Other Edo-period featureless yokai compiled by Toriyama Sekien" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["flesh-pink", "pale", "greyish"],
+      "features": [
+        { "feature": "Amorphous flesh-blob", "description": "Roughly human-sized mass of soft, wrinkled flesh", "frequency": "always" },
+        { "feature": "No distinct eyes or ears", "description": "Tradition (e.g. Sekien) holds it has neither eye nor ear", "frequency": "always" },
+        { "feature": "Vestigial fingers and toes", "description": "Rudimentary digits visible within the folds of skin", "frequency": "common" },
+        { "feature": "Drooping facial features", "description": "Suggested by folds of skin rather than fully formed", "frequency": "common" },
+        { "feature": "Putrid odor", "description": "Said to smell strongly of rotting flesh", "frequency": "common" }
+      ],
+      "morphology": "A roughly human-scale, undifferentiated mass of soft, sagging flesh."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Wandering deserted places", "description": "Drifts aimlessly through abandoned temples, graveyards, and empty streets", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Immortality flesh (in some traditions)", "description": "Some accounts hold that consuming the Nuppeppō's flesh grants long life or immortality, paralleling Chinese 'feng' or panacea traditions", "frequency": "rare", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "passive",
+      "social_structure": "solitary",
+      "habitat_preference": ["abandoned temples", "graveyards", "deserted village streets", "year-end haunts"],
+      "patterns": [
+        "Wanders rather than attacks",
+        "Most active at night and at year's end",
+        "Occasionally reported in groups"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Japan; an Edo-period yokai documented in classical Japanese yokai scrolls.",
+      "continents": ["Asia"],
+      "countries": ["Japan"],
+      "regions": ["Japan (Edo-period yokai literature)"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Sunpu Castle",
+        "location": {
+          "description": "Sunpu Castle (modern Shizuoka), residence of Tokugawa Ieyasu",
+          "country": "Japan",
+          "region": "Shizuoka"
+        },
+        "notes": "Site of the 1609 nikujin ('meat-person') incident sometimes associated with Nuppeppō tradition"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1700-01-01",
         "circa": true,
-        "source": "Traditional folklore"
+        "source": "Bakemono no e scroll, c. 1700; subsequent Edo-period yokai compilations"
       }
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Edo-period Japanese yokai literature, drawing on a wider tradition of grotesque and harmless wandering spirits.",
+      "earliest_accounts": "Bakemono no e (c. 1700), Sawaki Suushi's Hyakkai Zukan (1737), and Toriyama Sekien's Gazu Hyakki Yagyō (1776).",
+      "folklore_connections": "Connects to broader Edo-period yokai tradition (Sekien's compilations) and to Chinese 'feng' / panacea-creature traditions invoked in the immortality-flesh motif."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1609-01-01", "event": "A nikujin ('meat-person') is reported at Sunpu Castle (Tokugawa Ieyasu's residence); later commentators connect this incident to Chinese 'feng' panacea-creature lore and to Nuppeppō tradition", "significance": "Often-cited proto-Nuppeppō historical anecdote", "source": "Wikipedia, 'Nuppeppo'" },
+      { "date": "1700-01-01", "event": "Bakemono no e scroll (c. 1700) depicts the Nuppeppō; held at Brigham Young University's L. Tom Perry Special Collections", "significance": "Earliest visual attestation of the Nuppeppō by name", "source": "Bakemono no e (BYU L. Tom Perry Special Collections)" },
+      { "date": "1737-01-01", "event": "Sawaki Suushi includes the Nuppeppō in the Hyakkai Zukan (1737)", "significance": "Major Edo-period yokai-scroll attestation", "source": "Sawaki Suushi, Hyakkai Zukan" },
+      { "date": "1776-01-01", "event": "Toriyama Sekien depicts the Nuppeppō in the Gazu Hyakki Yagyō (1776)", "significance": "Most influential and widely-reproduced visual depiction", "source": "Toriyama Sekien, Gazu Hyakki Yagyō" }
+    ],
+    "modern_era": "The Nuppeppō appears regularly in modern yokai illustration, manga (e.g. Shigeru Mizuki's GeGeGe no Kitarō), anime, and games, often as a grotesque-but-harmless background figure."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -91,35 +143,123 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "nuppeppo-evidence-bakemono",
+        "type": "scroll painting",
+        "name": "Bakemono no e (c. 1700)",
+        "description": "Edo-period yokai scroll depicting the Nuppeppō, held at Brigham Young University's L. Tom Perry Special Collections.",
+        "status": "verified",
+        "analysis": "Earliest known illustrated attestation of the Nuppeppō by name.",
+        "source": "L. Tom Perry Special Collections, BYU"
+      },
+      {
+        "id": "nuppeppo-evidence-hyakkai",
+        "type": "scroll painting",
+        "name": "Hyakkai Zukan (1737)",
+        "description": "Yokai scroll by Sawaki Suushi.",
+        "status": "verified",
+        "source": "Sawaki Suushi"
+      },
+      {
+        "id": "nuppeppo-evidence-sekien",
+        "type": "woodblock print",
+        "name": "Gazu Hyakki Yagyō (1776)",
+        "description": "Toriyama Sekien's standard yokai compilation including the Nuppeppō.",
+        "status": "verified",
+        "source": "Toriyama Sekien"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Wandering flesh-spirit",
+        "description": "Within Edo-period yokai tradition the Nuppeppō is a real but harmless spirit-being haunting deserted places.",
+        "proponents": ["Edo-period Japanese yokai tradition"],
+        "evidence_cited": ["Recurrent depiction in Edo yokai scrolls"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Edo-period bestiary figure",
+        "description": "The Nuppeppō functions primarily as a Sekien-canonical bestiary figure, codified by 18th-century artists and inheriting motifs from earlier flesh-creature traditions (e.g. the 1609 nikujin).",
+        "proponents": ["Japanese yokai-studies scholars (e.g. Katsumi Tada)"],
+        "evidence_cited": ["Documented codification through Bakemono no e, Hyakkai Zukan, and Gazu Hyakki Yagyō"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Edo-period yokai-scroll tradition",
+        "Toriyama Sekien yokai canon"
+      ],
+      "stories": [
+        "Sunpu Castle nikujin incident (1609)",
+        "Wandering Nuppeppō encountered in abandoned temples"
+      ],
+      "beliefs": "Treated as a grotesque but generally harmless yokai; in rare traditions its flesh is said to confer immortality."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
+      "literature": [
+        "Toriyama Sekien, Gazu Hyakki Yagyō (1776)",
+        "Sawaki Suushi, Hyakkai Zukan (1737)"
+      ],
+      "film_tv": [
+        "GeGeGe no Kitarō (Shigeru Mizuki, 1960s onward) — the Nuppeppō appears as a recurring yokai"
+      ],
       "games": [],
-      "other": []
+      "music": [],
+      "other": [
+        "Standard appearances in modern yokai illustrated encyclopaedias"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
+    "researchers": [
+      { "name": "Toriyama Sekien", "affiliation": "Edo-period yokai artist", "contribution": "Standardised the visual depiction of the Nuppeppō in the Gazu Hyakki Yagyō (1776)", "period": "1712–1788" },
+      { "name": "Sawaki Suushi", "affiliation": "Edo-period painter", "contribution": "Earlier yokai-scroll Hyakkai Zukan (1737) including the Nuppeppō", "period": "Early 18th century" },
+      { "name": "Katsumi Tada", "affiliation": "Independent yokai scholar (Japan)", "contribution": "Modern scholarly analysis of yokai including the Nuppeppō / noppera-bō distinction", "period": "Late 20th – 21st century" },
+      { "name": "Morihiko Fujisawa", "affiliation": "Japanese folklore scholar", "contribution": "Established the Nuppeppō's traditional association with abandoned temples", "period": "Early–mid 20th century" }
+    ],
     "organizations": [],
-    "ongoing_studies": "None documented"
+    "ongoing_studies": "Active topic in Japanese yokai studies, including at the International Research Center for Japanese Studies (Nichibunken)."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wikipedia-nuppeppo",
+      "type": "website",
+      "title": "Nuppeppo",
+      "publication": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nuppeppo",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "sekien-gazu-hyakki",
+      "type": "book",
+      "title": "Gazu Hyakki Yagyō",
+      "authors": ["Toriyama Sekien"],
+      "date": "1776"
+    },
+    {
+      "id": "sawaki-hyakkai",
+      "type": "book",
+      "title": "Hyakkai Zukan",
+      "authors": ["Sawaki Suushi"],
+      "date": "1737"
+    }
+  ]
 }
